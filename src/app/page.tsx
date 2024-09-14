@@ -1,7 +1,10 @@
+"use client";
+import Prueba from "@/components/Prueba";
+
 export default function Home() {
   return (
     <div>
-      <h1>Hola</h1>
+      <Prueba />
     </div>
   );
 }

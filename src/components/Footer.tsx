@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="bg-blue-900">
+        <div className="bg-blue-950">
           <div className="mx-auto flex max-w-screen-xl justify-between">
             <p>© Grupo Comfisa Sac - Todos los derechos reservados {anio}</p>
             <p>Startup / Desarrollo Web - Encode.com</p>
