@@ -10,7 +10,7 @@ import {
 export default function Toobar() {
   return (
     <div className="bg-blue-comfisa py-2 text-white [&>div>div+div>div>svg]:text-orange-comfisa [&>div>div>svg]:text-orange-comfisa">
-      <div className="mx-auto flex max-w-screen-xl items-center justify-between">
+      <div className="mx-auto flex lg:flex-row flex-col max-w-screen-xl items-center justify-between">
         <div className="flex items-center gap-1.5">
           <FaLocationDot />
           <p>Av Dirección 123 - Lurín</p>

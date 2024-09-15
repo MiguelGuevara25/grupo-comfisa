@@ -9,12 +9,12 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="mx-auto flex max-w-screen-xl items-center justify-between py-5">
+    <nav className="mx-auto flex max-w-screen-xl flex-col items-center justify-between py-5 lg:flex-row">
       <div className="w-40">
         <img src="/logoComfisa.png" alt="" />
       </div>
 
-      <ul className="flex gap-10">
+      <ul className="flex flex-col gap-10 lg:flex-row">
         {links.map(({ id, href, label }) => (
           <li key={id}>
             <Link

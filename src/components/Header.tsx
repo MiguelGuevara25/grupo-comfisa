@@ -3,7 +3,7 @@ import Toolbar from "./Toolbar";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-10 bg-white shadow-lg rounded-lg mb-10">
+    <header className="bg-white shadow-lg rounded-lg mb-10">
       <Toolbar />
       <Navbar />
     </header>
