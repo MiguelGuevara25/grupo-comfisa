@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav className="mx-auto flex max-w-screen-xl flex-col items-center justify-between py-5 lg:flex-row">
       <div className="w-40">
-        <img src="/logoComfisa.png" alt="" />
+        <img src="/logoComfisa.png" alt="Logo de Comfisa" />
       </div>
 
       <ul className="flex flex-col gap-10 lg:flex-row">
@@ -32,7 +32,7 @@ export default function Navbar() {
         <a
           href="https://wa.me/+51994045254"
           target="_blank"
-          className="flex items-center gap-1.5 rounded-md border border-orange-comfisa bg-orange-comfisa px-5 py-2 text-white transition-all hover:border hover:border-orange-comfisa hover:bg-white hover:text-orange-comfisa"
+          className="animate__animated animate__headShake animate__infinite flex items-center gap-1.5 rounded-md border border-orange-comfisa bg-orange-comfisa px-5 py-2 text-white transition-all hover:border hover:border-orange-comfisa hover:bg-white hover:text-orange-comfisa"
         >
           <FaWhatsapp className="text-xl" />
 

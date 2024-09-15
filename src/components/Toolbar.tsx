@@ -10,13 +10,13 @@ import { GiRotaryPhone } from "react-icons/gi";
 export default function Toobar() {
   return (
     <div className="bg-blue-comfisa py-2 text-white [&>div>div+div>div>svg]:text-orange-comfisa [&>div>div>svg]:text-orange-comfisa">
-      <div className="mx-auto flex max-w-screen-xl flex-col items-center justify-between lg:flex-row">
-        <div className="flex items-center gap-1.5">
+      <div className="mx-auto flex w-4/5 flex-col items-center justify-between md:flex-row xl:max-w-screen-xl">
+        <div className="hidden items-center gap-1.5 md:flex">
           <FaEnvelope />
-          <p>ventas@comfisa.com</p>
+          <a href="mailto:ventas@comfisa.com">ventas@comfisa.com</a>
         </div>
 
-        <div className="flex items-center gap-10">
+        <div className="hidden flex-col items-center md:flex lg:flex-row lg:gap-10">
           <div className="flex items-center gap-1.5">
             <FaPhone />
             <p>+51 994045254</p>
