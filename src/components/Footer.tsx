@@ -5,11 +5,11 @@ export default function Footer() {
     <footer className="rounded-t-xl bg-white">
       <div className="flex">
         <div>
-          <img src="/icoComfisa.png" alt="" />
+          <img src="/icoComfisa.png" alt="Grupo Comfisa Sac" />
         </div>
 
         <div>
-          <div className="">
+          <div>
             <div className="border">
               <h3>Nuestros locales:</h3>
               <ul>

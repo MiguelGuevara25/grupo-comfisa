@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         "blue-comfisa": "#2A4AAE",
-        "orange-comfisa": "#E98C00",
+        "orange-comfisa": "#FF8E00",
       },
     },
   },

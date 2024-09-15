@@ -30,7 +30,7 @@ export default function Navbar() {
 
       <div>
         <a
-          href="https://web.whatsapp.com/send?phone=51994045254"
+          href="https://wa.me/+51994045254"
           target="_blank"
           className="flex items-center gap-1.5 rounded-md border border-orange-comfisa bg-orange-comfisa px-5 py-2 text-white transition-all hover:border hover:border-orange-comfisa hover:bg-white hover:text-orange-comfisa"
         >
