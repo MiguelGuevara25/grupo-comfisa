@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa6";
 
 export default function Navbar() {
   const links = [
@@ -28,9 +29,15 @@ export default function Navbar() {
       </ul>
 
       <div>
-        <button className="rounded-md border border-orange-comfisa bg-orange-comfisa px-5 py-2 text-white transition-all hover:border hover:border-orange-comfisa hover:bg-white hover:text-orange-comfisa">
-          Chatea con nosotros
-        </button>
+        <a
+          href="https://web.whatsapp.com/send?phone=51994045254"
+          target="_blank"
+          className="flex items-center gap-1.5 rounded-md border border-orange-comfisa bg-orange-comfisa px-5 py-2 text-white transition-all hover:border hover:border-orange-comfisa hover:bg-white hover:text-orange-comfisa"
+        >
+          <FaWhatsapp className="text-xl" />
+
+          <span>Chatea con nosotros</span>
+        </a>
       </div>
     </nav>
   );

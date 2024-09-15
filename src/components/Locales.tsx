@@ -64,15 +64,18 @@ export default function Locales() {
               <img src={`/${local.img}`} alt={local.nombre} />
             </div>
 
-            <div className="m-10 space-y-3 [&>p>svg]:text-lg [&>p]:flex [&>p]:items-center [&>p]:gap-2">
-              <h3 className="text-center text-lg">{local.nombre}</h3>
-              <p className="">
-                <FaMapPin />
-                <span className="">{local.direccion}</span>
-              </p>
+            <div className="mx-10 mb-10 mt-5 space-y-3 [&>p>svg]:text-lg [&>p>svg]:text-blue-comfisa [&>p]:flex [&>p]:items-center [&>p]:gap-2">
+              <h3 className="text-center text-lg font-bold">{local.nombre}</h3>
               <p>
-                <FaPhone /> <span>{local.numeros}</span>
+                <FaMapPin />
+                <span>{local.direccion}</span>
               </p>
+
+              <p>
+                <FaPhone />
+                <span>{local.numeros}</span>
+              </p>
+
               <p>
                 <FaClock />
                 <span>{local.horarios}</span>
