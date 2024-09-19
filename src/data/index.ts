@@ -18,3 +18,10 @@ export const directions = [
     address: "Av. Manuel Valle 33, Lima 15823",
   },
 ];
+
+export const links = [
+  { id: 1, href: "/", label: "Inicio" },
+  { id: 2, href: "/nosotros", label: "Nosotros" },
+  { id: 3, href: "/donde-comprar", label: "Donde comprar" },
+  { id: 4, href: "/contacto", label: "Contáctanos" },
+];

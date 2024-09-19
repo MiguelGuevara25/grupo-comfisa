@@ -1,21 +1,62 @@
+"use client";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { CgMenuMotion } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa6";
+import ModalNavbar from "./ModalNavbar";
+import { links } from "@/data";
 
 export default function Navbar() {
-  const links = [
-    { id: 1, href: "/", label: "Inicio" },
-    { id: 2, href: "/nosotros", label: "Nosotros" },
-    { id: 3, href: "/donde-comprar", label: "Donde comprar" },
-    { id: 4, href: "/contacto", label: "Contáctanos" },
-  ];
+  const [navbarModal, setNavbarModal] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
+
+  useEffect(() => {
+    if (navbarModal) {
+      document.body.classList.add("overflow-y-hidden");
+    } else {
+      document.body.classList.remove("overflow-y-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-y-hidden");
+    };
+  }, [navbarModal]);
+
+  const handleOpenNavbarModal = () => {
+    setNavbarModal(true);
+    setIsClosing(false);
+  };
+
+  const handleCloseNavbarModal = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setNavbarModal(false);
+    }, 500);
+  };
 
   return (
-    <nav className="mx-auto flex max-w-screen-xl flex-col items-center justify-between py-5 lg:flex-row">
+    <nav className="mx-auto flex w-11/12 items-center justify-between py-5 xl:max-w-screen-xl">
       <div className="w-40">
-        <img src="/logoComfisa.png" alt="Logo de Comfisa" />
+        <a href="/">
+          <img src="/logoComfisa.png" alt="Logo de Comfisa" />
+        </a>
       </div>
 
-      <ul className="flex flex-col gap-10 lg:flex-row">
+      <div className="lg:hidden">
+        <CgMenuMotion
+          className="text-4xl text-orange-comfisa"
+          onClick={handleOpenNavbarModal}
+        />
+      </div>
+
+      {navbarModal && (
+        <ModalNavbar
+          handleCloseNavbarModal={handleCloseNavbarModal}
+          isClosing={isClosing}
+        />
+      )}
+
+      <ul className="hidden flex-col gap-10 lg:flex lg:flex-row">
         {links.map(({ id, href, label }) => (
           <li key={id}>
             <Link
@@ -28,7 +69,7 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <div>
+      <div className="hidden lg:block">
         <a
           href="https://wa.me/+51994045254"
           target="_blank"
