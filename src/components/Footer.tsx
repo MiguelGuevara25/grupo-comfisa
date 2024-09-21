@@ -14,7 +14,7 @@ export default function Footer() {
   const anio = new Date().getFullYear();
 
   return (
-    <footer className="rounded-t-xl bg-white">
+    <footer className="rounded-t-3xl bg-white">
       <div className="mx-auto flex w-4/5 flex-col flex-wrap justify-between gap-10 py-10 md:flex-row md:items-start xl:max-w-screen-xl [&>div>div>p>svg]:text-blue-comfisa [&>div>h3]:mb-2 [&>div>h3]:font-bold">
         <div>
           <Image

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { ReactNode } from "react";
 import "./globals.css";
 import "animate.css";
+import BtnWspMobile from "@/components/home/BtnWspMobile";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,6 +37,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+
+        <BtnWspMobile />
       </body>
     </html>
   );

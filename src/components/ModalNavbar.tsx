@@ -39,7 +39,7 @@ export default function ModalNavbar({
           {links.map(({ id, href, label }) => (
             <li key={id}>
               <Link
-                className="text-2xl transition-colors hover:text-orange-comfisa"
+                className="text-xl transition-colors hover:text-orange-comfisa"
                 href={href}
                 onClick={handleCloseNavbarModal}
               >
