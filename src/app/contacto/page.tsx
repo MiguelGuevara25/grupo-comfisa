@@ -1,6 +1,10 @@
-"use client"
+"use client";
 import FormContact from "@/components/contacto/FormContact";
-import MapLocals from "@/components/contacto/MapLocals";
+import dynamic from "next/dynamic";
+
+const MapLocals = dynamic(() => import("@/components/contacto/MapLocals"), {
+  ssr: false,
+});
 
 export default function ContactoPage() {
   return (
