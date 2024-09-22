@@ -1,3 +1,4 @@
+"use client"
 import FormContact from "@/components/contacto/FormContact";
 import MapLocals from "@/components/contacto/MapLocals";
 
