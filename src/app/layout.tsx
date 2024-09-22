@@ -1,3 +1,4 @@
+import BtnWspMobile from "@/components/home/BtnWspMobile";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "@/components/Header";
@@ -5,7 +6,7 @@ import Footer from "@/components/Footer";
 import { ReactNode } from "react";
 import "./globals.css";
 import "animate.css";
-import BtnWspMobile from "@/components/home/BtnWspMobile";
+import 'leaflet/dist/leaflet.css';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
