@@ -51,7 +51,10 @@ export default function MapLocals() {
   ];
 
   const initialCenter = locations[0];
-  const arrInitialCenter = [initialCenter.lat, initialCenter.lng];
+  const arrInitialCenter: [number, number] = [
+    initialCenter.lat,
+    initialCenter.lng,
+  ];
 
   const ZoomOnClick = ({ position }: ZoomOnClickProps) => {
     const map = useMap();
